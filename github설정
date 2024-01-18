@@ -1,0 +1,7 @@
+Git Bash 실행
+
+git config --global user.name "이름"
+
+git config --global user.email "이메일"
+
+git config --list 로 name, email 확인
