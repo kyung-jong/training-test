@@ -18,3 +18,19 @@ let user = {name: "John"};
 console.log(user);
 console.log(user.valueOf());
 console.log(user.valueOf() === user);
+
+console.log('----------------------------');
+
+
+const testObj = {
+    a: "aa"
+};
+
+const testObj2 = Object.assign({}, testObj);
+
+console.log( testObj === testObj2 );
+
+testObj.a = "bb";
+
+console.log(testObj.a);
+console.log(testObj2.a);
