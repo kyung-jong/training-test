@@ -1,9 +1,20 @@
 
-let searchText = '제출완료';
-let replaceText = '신청완료';
+// let searchText = '제출완료';
+// let replaceText = '신청완료';
 
-let currentText = '\n\t\t\t\t\t\t\t\t\t전체\n\t\t\t\t\t\t\t\t\t제출완료보완요청승인반려\n\t\t\t\t\t\t\t\t';//$('#search_atrz_sttus_code').text();
-console.log(currentText);
-var nextText = currentText.replace(searchText, replaceText);
+// let currentText = '\n\t\t\t\t\t\t\t\t\t전체\n\t\t\t\t\t\t\t\t\t제출완료보완요청승인반려\n\t\t\t\t\t\t\t\t';//$('#search_atrz_sttus_code').text();
+// console.log(currentText);
+// var nextText = currentText.replace(searchText, replaceText);
 
-console.log(nextText);
+// console.log(nextText);
+
+const test = {
+    name: "aa",
+};
+
+console.log(test);
+
+let user = {name: "John"};
+console.log(user);
+console.log(user.valueOf());
+console.log(user.valueOf() === user);
