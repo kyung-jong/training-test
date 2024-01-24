@@ -129,3 +129,4 @@ console.log(numbers.findIndex((x) => x % 2 === 0));
 
 // reduce()
 console.log(numbers.reduce((p, n) => p + n, 0));
+
