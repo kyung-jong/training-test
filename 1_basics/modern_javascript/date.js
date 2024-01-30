@@ -41,3 +41,10 @@ for (let i = 0; i < 111000; i++) {
 let end2 = Date.now(); // 측정 종료
 console.log(`${end2 - start2} 걸림`);
 
+
+
+let aa = Date.now();
+console.log(aa);
+
+let bb = new Date(aa);
+console.log(bb);

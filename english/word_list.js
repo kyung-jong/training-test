@@ -30,7 +30,9 @@ function add(name, desc, etc){
 
 add(`fulfilled`, `성취감을 느끼는 (↔unfulfilled)`, `[fʊlˈfɪld]`);
 add(`describe`, `(~이 어떠한지를) 말하다[서술하다], 묘사하다`, `[dɪˈskraɪb]`);
-add(`resolve`, `(문제 등을) 해결하다 (=settle), (단호한) 결심[결의/의지] (=resolution)`, `[rɪˈzɑːlv]`);
+add(`resolve`, `(문제 등을) 해결하다 (=settle) | (단호한) 결심[결의/의지] (=resolution)`, `[rɪˈzɑːlv]`);
+add(`parse`, `(문장을 문법적으로) 분석하다`, `[pɑːrs]`);
+add(`apply`, `1신청하다, 지원하다 | 2쓰다, 적용하다`, `[əˈplaɪ]`);
 
 console.log( wordNote.wordList );
 
