@@ -33,6 +33,7 @@ add(`describe`, `(~이 어떠한지를) 말하다[서술하다], 묘사하다`, 
 add(`resolve`, `(문제 등을) 해결하다 (=settle) | (단호한) 결심[결의/의지] (=resolution)`, `[rɪˈzɑːlv]`);
 add(`parse`, `(문장을 문법적으로) 분석하다`, `[pɑːrs]`);
 add(`apply`, `1신청하다, 지원하다 | 2쓰다, 적용하다`, `[əˈplaɪ]`);
+add(`illegal`, `불법적인 (↔legal) | (외국인) 불법 체류자[노동자]`, `[ɪˈliːɡl]`);
 
 console.log( wordNote.wordList );
 

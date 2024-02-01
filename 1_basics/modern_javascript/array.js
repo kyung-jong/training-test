@@ -16,3 +16,5 @@ function camelize(str) {
 console.log( camelize("test-training-go") );
 console.log(camelize("list-style-image"));
 console.log(camelize(""));
+
+console.log(["test-123", "aaa"].join(""));
