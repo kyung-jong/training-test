@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .box1 {
+            border : 1px solid red;
+            width : 500px;
+            height : 1000px;
+        }
+        .box2 {
+            border : 1px solid blue;
+            width : 600px;
+            height : 1000px;
+        }
+        .box3 {
+            border : 1px solid black;
+            width : 600px;
+            height : 1000px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            btnStart.addEventListener("click", () => {
+                slowDownScroll(2141);
+            });
+        });
+
+    </script>
+
+    <button id="btnStart">시작버튼</button>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <button id="btnEnd">마지막버튼</button>
+    <button onclick="alert(window.pageYOffset);">마지막버튼2</button>
+
+    <script>
+        //alert(document.documentElement.clientWidth); // 스크롤바 제외
+        //alert(document.documentElement.clientHeight);
+        //alert(window.innerWidth); // 스크롤바 포함
+        //window.scrollBy(x, y)
+/*
+        document.querySelector("#btnStart").addEventListener("click", function(){
+             //alert(document.documentElement.clientHeight);
+             //alert(document.documentElement.offsetHeight);
+            // alert(document.documentElement.scrollHeight);
+            //let maxHeight = document.documentElement.offsetHeight;
+            //window.scrollTo(0, maxHeight);
+
+            slowDownScroll(2141);
+            //slowScroll();
+
+            //alert(window.pageYOffset);
+            //alert(document.querySelector("#btnEnd").scrollIntoView(false));
+
+            
+
+        });
+
+
+        btnStart.addEventListener("click", () => {
+            slowDownScroll(2141);
+        });
+*/
+        document.querySelector("#btnEnd").addEventListener("click", function(){
+            window.scrollTo(0, 0);
+        });
+
+        let speed = 50;
+        function slowDownScroll(maxHeight) {
+            let nowPosition = window.pageYOffset;
+            let gabHeight = maxHeight - nowPosition;
+
+            function innerLoop() {
+                if( gabHeight < speed ) {
+                    window.scrollTo(0, maxHeight);
+
+                    slowUpScroll();
+                    return;
+                }
+                window.scrollBy(0, speed);
+                gabHeight -= speed;
+                setTimeout(innerLoop, 20);
+            }
+
+            innerLoop();
+        }
+
+        function slowUpScroll() {
+            let nowPosition = window.pageYOffset;
+            
+            function innerLoop() {
+                if( nowPosition < speed ) {
+                    window.scrollTo(0, 0);
+                    return;
+                }
+                window.scrollBy(0, -speed);
+                nowPosition -= speed;
+                setTimeout(innerLoop, 20);
+            }
+            innerLoop();
+        }
+/*
+        function slowScroll() {
+            let currentPosition = window.pageYOffset; // 현재 스크롤 위치
+            let targetPosition = 500; // 목표 스크롤 위치 (원하는 값으로 수정 가능)
+            let distance = targetPosition - currentPosition;
+            let speed = 5; // 스크롤 속도 (값이 작을수록 느리게 스크롤됨)
+
+            function scrollStep() {
+                if (Math.abs(distance) <= speed) {
+                window.scrollTo(0, targetPosition);
+                return;
+                }
+                if (distance > 0) {
+                window.scrollBy(0, speed);
+                } else {
+                window.scrollBy(0, -speed);
+                }
+                distance -= speed;
+                setTimeout(scrollStep, 20);
+            }
+
+            scrollStep();
+        }
+*/      
+    </script>
+</body>
+</html>
