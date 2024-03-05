@@ -35,6 +35,7 @@ add(`parse`, `(문장을 문법적으로) 분석하다`, `[pɑːrs]`);
 add(`apply`, `1신청하다, 지원하다 | 2쓰다, 적용하다`, `[əˈplaɪ]`);
 add(`illegal`, `불법적인 (↔legal) | (외국인) 불법 체류자[노동자]`, `[ɪˈliːɡl]`);
 add(`consumer`, `소비자 (→producer)`, `[kən│suːmə(r)]`);
+add(`radius`, `반지름, 반경 (→diameter)`, `[ˈreɪdiəs]`);
 
 console.log( wordNote.wordList );
 
